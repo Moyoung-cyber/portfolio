@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aakash Lama — Frontend Developer & UI Designer</title>
+  <meta name="description" content="Portfolio of Aakash Lama — Frontend Developer & UI Designer. Projects, skills, resume and contact." />
+  <meta name="author" content="Aakash Lama" />
+  <meta name="theme-color" content="#06b6d4" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Aakash Lama — Frontend Developer" />
+  <meta property="og:description" content="Building clean, responsive web experiences with HTML, CSS, JS, and UI design." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourdomain.com" />
+  <meta property="og:image" content="https://yourdomain.com/og-image.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>AL</text></svg>">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- EmailJS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
+
+</head>
+<body>
+  <div class="container">
+    <!-- NAVBAR -->
+    <header>
+      <div class="nav" role="navigation" aria-label="Main navigation">
+        <div class="brand">
+          <div class="logo">AL</div>
+          <div>
+            <div class="brand-text">Aakash Lama</div>
+            <div class="brand-sub">Frontend • UI Designer</div>
+          </div>
+        </div>
+        <nav>
+          <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">Menu</button>
+          <ul id="main-nav" role="list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div style="display:flex;gap:.6rem;align-items:center">
+          <a class="cta" href="#contact">Hire Me</a>
+          <button id="themeToggle" aria-label="Toggle light/dark theme" aria-pressed="false">
+            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+      <button class="menu-toggle" style="position:absolute;top:1.5rem;right:1.5rem;font-size:2rem" aria-label="Close menu">Close</button>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="cta" style="margin-top:1rem">Hire Me</a>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-left">
+        <h1>Hi, I'm <span class="gradient-text">Aakash Lama</span></h1>
+        <p class="muted">A passionate frontend developer and UI designer crafting responsive, accessible, and beautiful digital experiences.</p>
+        <div class="buttons">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-ghost" href="#contact">Get in Touch</a>
+        </div>
+
+        <div class="tech-stack">
+          <div class="caps">Tech Stack</div>
+          <div class="chips">
+            <div class="chip">HTML</div>
+            <div class="chip">CSS</div>
+            <div class="chip">JavaScript</div>
+            <div class="chip">PHP</div>
+            <div class="chip">Figma</div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="profile-card">
+        <div class="avatar" role="img" aria-label="Aakash Lama - Frontend Developer">
+          Aakash Lama<br><small>Frontend • UI</small>
+        </div>
+        <div class="profile-actions">
+          <a class="btn btn-ghost" href="#about">About Me</a>
+          <a class="btn btn-ghost" href="#projects">Projects</a>
+        </div>
+      </aside>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+      <div class="bio">
+        <h2>About Me</h2>
+        <p>I'm a motivated frontend developer with a strong foundation in HTML, CSS, JavaScript, and UI design. I build responsive, accessible websites and enjoy turning ideas into pixel-perfect interfaces. Currently expanding into PHP backends and mobile UI with Figma.</p>
+        <div class="skills-list">
+          <div class="skill"><span class="skill-label">HTML</span><div class="bar"><i style="width:92%"></i></div></div>
+          <div class="skill"><span class="skill-label">CSS</span><div class="bar"><i style="width:88%"></i></div></div>
+          <div class="skill"><span class="skill-label">JavaScript</span><div class="bar"><i style="width:76%"></i></div></div>
+          <div class="skill"><span class="skill-label">PHP & MySQL</span><div class="bar"><i style="width:66%"></i></div></div>
+          <div class="skill"><span class="skill-label">Figma</span><div class="bar"><i style="width:70%"></i></div></div>
+        </div>
+
+        <div class="bio-actions">
+          <a class="btn btn-primary" href="resume.pdf" download>Download CV</a>
+          <a class="btn btn-ghost" href="#projects">See Projects</a>
+        </div>
+      </div>
+
+      <div class="quick-info">
+        <h2 class="caps">Quick Info</h2>
+        <div class="info-card">
+          <div class="label">Location</div>
+          <div class="info-value">Kamalbinayak, Bhaktapur, Nepal</div>
+          <div class="label">Email</div>
+          <div><a href="mailto:aakashlama526@gmail.com" class="info-link">aakashlama526@gmail.com</a></div>
+          <div class="label">Education</div>
+          <div class="info-value">
+            <div>SEE — Paragon Academy (GPA 3.2, 2075 BS)</div>
+            <div>+2 — Bagiswori College (GPA 2.95, 2078 BS)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="section-title"><h2>Projects</h2></div>
+      <div class="filters" role="tablist">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="web">Web</button>
+        <button class="chip" data-filter="ui">UI Design</button>
+        <button class="chip" data-filter="mobile">Mobile</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+        <article class="project" data-type="web">
+          <div class="project-thumb" style="background-image:url('https://images.unsplash.com/photo-1460925895917-afdab827c2f2?w=600')"></div>
+          <div class="project-meta">
+            <div>
+              <strong>E-commerce Homepage</strong>
+              <div class="muted">HTML, CSS, JavaScript</div>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com" target="_blank" rel="noopener">Demo</a>
+              <a href="https://github.com" target="_blank" rel="noopener">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project" data-type="ui">
+          <div class="project-thumb" style="background-image:url('https://images.unsplash.com/photo-1618761714954-0b8cd0026356?w=600')"></div>
+          <div class="project-meta">
+            <div>
+              <strong>Food Delivery App</strong>
+              <div class="muted">Figma, UI Prototype</div>
+            </div>
+            <div class="project-links">
+              <a href="https://figma.com" target="_blank" rel="noopener">View</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume">
+      <div class="section-title"><h2>Experience & Education</h2></div>
+      <div class="timeline">
+        <div class="t-item">
+          <div class="t-header">
+            <strong>Frontend & UI Learning Journey</strong>
+            <span class="muted">2023 – Present</span>
+          </div>
+          <div class="muted">Self-taught developer building responsive sites, PHP backends, and Figma prototypes. Seeking internships.</div>
+        </div>
+        <div class="t-item">
+          <div class="t-header">
+            <strong>+2 Science — Bagiswori College</strong>
+            <span class="muted">2078 BS</span>
+          </div>
+          <div class="muted">GPA: 2.95</div>
+        </div>
+        <div class="t-item">
+          <div class="t-header">
+            <strong>SEE — Paragon Academy</strong>
+            <span class="muted">2075 BS</span>
+          </div>
+          <div class="muted">GPA: 3.2</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="section-title"><h2>Contact</h2></div>
+      <div class="contact-grid">
+        <form id="contactForm" novalidate>
+          <div>
+            <label for="name" class="label">Name</label>
+            <input id="name" type="text" required placeholder="Your name" />
+          </div>
+          <div>
+            <label for="email" class="label">Email</label>
+            <input id="email" type="email" required placeholder="you@example.com" />
+          </div>
+          <div>
+            <label for="subject" class="label">Subject (optional)</label>
+            <input id="subject" type="text" placeholder="What's this about?" />
+          </div>
+          <div>
+            <label for="message" class="label">Message</label>
+            <textarea id="message" rows="5" required placeholder="Write your message..."></textarea>
+          </div>
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">Send Message</button>
+            <div id="formStatus" aria-live="polite"></div>
+          </div>
+        </form>
+
+        <aside class="contact-info">
+          <h3>Let's Connect</h3>
+          <p class="muted">Email me directly or find me online:</p>
+          <div class="info-item">
+            <div class="label">Email</div>
+            <a href="mailto:aakashlama526@gmail.com" class="info-link">aakashlama526@gmail.com</a>
+          </div>
+          <div class="info-item">
+            <div class="label">Location</div>
+            <div class="info-value">Bhaktapur, Nepal</div>
+          </div>
+          <div class="info-item">
+            <div class="label">Social</div>
+            <div class="socials">
+              <a href="https://github.com/Moyoung-cyber" target="_blank" rel="noopener">GitHub</a>
+              <a href="https://www.linkedin.com/in/aakash-lama-65407027a/" target="_blank" rel="noopener">LinkedIn</a>
+              <a href="https://www.facebook.com/sky.tmg.566245" target="_blank" rel="noopener">Facebook</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <footer>
+      <div>© <span id="year"></span> Aakash Lama • Made with <span style="color:#e25555">Love</span> in Nepal</div>
+    </footer>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
