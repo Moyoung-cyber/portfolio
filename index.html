@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aakash Lama — Frontend Developer & UI Designer</title>
-  <meta name="description" content="Portfolio of Aakash Lama — Frontend Developer & UI Designer. Projects, skills, resume and contact." />
+  <meta name="description"
+    content="Portfolio of Aakash Lama — Frontend Developer & UI Designer. Projects, skills, resume and contact." />
   <meta name="author" content="Aakash Lama" />
   <meta name="theme-color" content="#06b6d4" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Aakash Lama — Frontend Developer" />
-  <meta property="og:description" content="Building clean, responsive web experiences with HTML, CSS, JS, and UI design." />
+  <meta property="og:description"
+    content="Building clean, responsive web experiences with HTML, CSS, JS, and UI design." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://yourdomain.com" />
   <meta property="og:image" content="https://yourdomain.com/og-image.jpg" />
 
   <!-- Favicon -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>AL</text></svg>">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>AL</text></svg>">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
-  
-  <!-- EmailJS -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap"
+    rel="stylesheet">
   <!-- CSS -->
   <link rel="stylesheet" href="styles.css" />
 
 </head>
+
 <body>
   <div class="container">
     <!-- NAVBAR -->
@@ -43,7 +46,8 @@
           </div>
         </div>
         <nav>
-          <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">Menu</button>
+          <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"
+            aria-controls="mobile-menu">Menu</button>
           <ul id="main-nav" role="list">
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -54,10 +58,13 @@
         <div style="display:flex;gap:.6rem;align-items:center">
           <a class="cta" href="#contact">Hire Me</a>
           <button id="themeToggle" aria-label="Toggle light/dark theme" aria-pressed="false">
-            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
             </svg>
-            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none">
+            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              style="display:none">
               <circle cx="12" cy="12" r="5"></circle>
               <line x1="12" y1="1" x2="12" y2="3"></line>
               <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -75,7 +82,8 @@
 
     <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Mobile navigation">
-      <button class="menu-toggle" style="position:absolute;top:1.5rem;right:1.5rem;font-size:2rem" aria-label="Close menu">Close</button>
+      <button class="menu-toggle" style="position:absolute;top:1.5rem;right:1.5rem;font-size:2rem"
+        aria-label="Close menu">Close</button>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#resume">Resume</a>
@@ -87,7 +95,8 @@
     <section class="hero" id="home">
       <div class="hero-left">
         <h1>Hi, I'm <span class="gradient-text">Aakash Lama</span></h1>
-        <p class="muted">A passionate frontend developer and UI designer crafting responsive, accessible, and beautiful digital experiences.</p>
+        <p class="muted">A passionate frontend developer and UI designer crafting responsive, accessible, and beautiful
+          digital experiences.</p>
         <div class="buttons">
           <a class="btn btn-primary" href="#projects">View Projects</a>
           <a class="btn btn-ghost" href="#contact">Get in Touch</a>
@@ -120,13 +129,25 @@
     <section id="about" class="about">
       <div class="bio">
         <h2>About Me</h2>
-        <p>I'm a motivated frontend developer with a strong foundation in HTML, CSS, JavaScript, and UI design. I build responsive, accessible websites and enjoy turning ideas into pixel-perfect interfaces. Currently expanding into PHP backends and mobile UI with Figma.</p>
+        <p>I'm a motivated frontend developer with a strong foundation in HTML, CSS, JavaScript, and UI design. I build
+          responsive, accessible websites and enjoy turning ideas into pixel-perfect interfaces. Currently expanding
+          into PHP backends and mobile UI with Figma.</p>
         <div class="skills-list">
-          <div class="skill"><span class="skill-label">HTML</span><div class="bar"><i style="width:92%"></i></div></div>
-          <div class="skill"><span class="skill-label">CSS</span><div class="bar"><i style="width:88%"></i></div></div>
-          <div class="skill"><span class="skill-label">JavaScript</span><div class="bar"><i style="width:76%"></i></div></div>
-          <div class="skill"><span class="skill-label">PHP & MySQL</span><div class="bar"><i style="width:66%"></i></div></div>
-          <div class="skill"><span class="skill-label">Figma</span><div class="bar"><i style="width:70%"></i></div></div>
+          <div class="skill"><span class="skill-label">HTML</span>
+            <div class="bar"><i style="width:92%"></i></div>
+          </div>
+          <div class="skill"><span class="skill-label">CSS</span>
+            <div class="bar"><i style="width:88%"></i></div>
+          </div>
+          <div class="skill"><span class="skill-label">JavaScript</span>
+            <div class="bar"><i style="width:76%"></i></div>
+          </div>
+          <div class="skill"><span class="skill-label">PHP & MySQL</span>
+            <div class="bar"><i style="width:66%"></i></div>
+          </div>
+          <div class="skill"><span class="skill-label">Figma</span>
+            <div class="bar"><i style="width:70%"></i></div>
+          </div>
         </div>
 
         <div class="bio-actions">
@@ -153,7 +174,9 @@
 
     <!-- PROJECTS -->
     <section id="projects">
-      <div class="section-title"><h2>Projects</h2></div>
+      <div class="section-title">
+        <h2>Projects</h2>
+      </div>
       <div class="filters" role="tablist">
         <button class="chip active" data-filter="all">All</button>
         <button class="chip" data-filter="web">Web</button>
@@ -163,7 +186,8 @@
 
       <div class="projects-grid" id="projectsGrid">
         <article class="project" data-type="web">
-          <div class="project-thumb" style="background-image:url('https://images.unsplash.com/photo-1460925895917-afdab827c2f2?w=600')"></div>
+          <div class="project-thumb"
+            style="background-image:url('https://images.unsplash.com/photo-1460925895917-afdab827c2f2?w=600')"></div>
           <div class="project-meta">
             <div>
               <strong>E-commerce Homepage</strong>
@@ -177,7 +201,8 @@
         </article>
 
         <article class="project" data-type="ui">
-          <div class="project-thumb" style="background-image:url('https://images.unsplash.com/photo-1618761714954-0b8cd0026356?w=600')"></div>
+          <div class="project-thumb"
+            style="background-image:url('https://images.unsplash.com/photo-1618761714954-0b8cd0026356?w=600')"></div>
           <div class="project-meta">
             <div>
               <strong>Food Delivery App</strong>
@@ -193,14 +218,17 @@
 
     <!-- RESUME -->
     <section id="resume">
-      <div class="section-title"><h2>Experience & Education</h2></div>
+      <div class="section-title">
+        <h2>Experience & Education</h2>
+      </div>
       <div class="timeline">
         <div class="t-item">
           <div class="t-header">
             <strong>Frontend & UI Learning Journey</strong>
             <span class="muted">2023 – Present</span>
           </div>
-          <div class="muted">Self-taught developer building responsive sites, PHP backends, and Figma prototypes. Seeking internships.</div>
+          <div class="muted">Self-taught developer building responsive sites, PHP backends, and Figma prototypes.
+            Seeking internships.</div>
         </div>
         <div class="t-item">
           <div class="t-header">
@@ -221,9 +249,11 @@
 
     <!-- CONTACT -->
     <section id="contact">
-      <div class="section-title"><h2>Contact</h2></div>
+      <div class="section-title">
+        <h2>Contact</h2>
+      </div>
       <div class="contact-grid">
-        <form id="contactForm" novalidate>
+        <form id="contact-form" novalidate>
           <div>
             <label for="name" class="label">Name</label>
             <input id="name" type="text" required placeholder="Your name" />
@@ -242,7 +272,6 @@
           </div>
           <div class="form-actions">
             <button class="btn btn-primary" type="submit">Send Message</button>
-            <div id="formStatus" aria-live="polite"></div>
           </div>
         </form>
 
@@ -275,6 +304,8 @@
   </div>
 
   <!-- JavaScript -->
+  <script src="js/email.min.js"></script>
+  <script src="js/email.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

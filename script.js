@@ -60,41 +60,6 @@ themeToggle.addEventListener('click', () => {
   localStorage.setItem('theme', isLight ? 'light' : 'dark');
 });
 
-// EmailJS
-emailjs.init("6vNm6U__iP517y2Sj");
-
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-  e.preventDefault();
-  const status = document.getElementById('formStatus');
-  const submitBtn = this.querySelector('button[type="submit"]');
-  
-  submitBtn.disabled = true;
-  status.textContent = 'Sending...';
-  status.style.color = 'var(--accent1)';
-
-  const templateParams = {
-    from_name: document.getElementById('name').value,
-    from_email: document.getElementById('email').value,
-    subject: document.getElementById('subject').value || '(No subject)',
-    message: document.getElementById('message').value
-  };
-
-  emailjs.send('service_v19wqrl', 'template_xb1p1am', templateParams)
-    .then(() => {
-      status.textContent = "Message sent! I'll reply soon — thank you!";
-      status.style.color = 'var(--accent1)';
-      this.reset();
-    }, (error) => {
-      status.textContent = 'Failed to send. Try emailing directly.';
-      status.style.color = '#ef4444';
-      console.error('EmailJS error:', error);
-    })
-    .finally(() => {
-      submitBtn.disabled = false;
-      setTimeout(() => status.textContent = '', 5000);
-    });
-});
-
 // Skill Bars Animation
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
